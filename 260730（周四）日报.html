@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>260730（周四）日报</title>
+<style>
+  :root{
+    --bg:#f4f6fa;
+    --card:#ffffff;
+    --ink:#1a2333;
+    --ink-2:#3d4a63;
+    --ink-3:#6b7a96;
+    --line:#e3e8f2;
+    --brand:#123a6d;
+    --brand-2:#1c5cb8;
+    --accent:#c0392b;
+    --shadow:0 1px 3px rgba(18,58,109,.06),0 6px 24px rgba(18,58,109,.07);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Microsoft YaHei","PingFang SC","Segoe UI",system-ui,-apple-system,sans-serif;
+    line-height:1.75;
+    font-size:15px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1060px;margin:0 auto;padding:0 22px 60px;}
+
+  header{
+    background:linear-gradient(135deg,#0e2c54 0%,#123a6d 55%,#1c5cb8 100%);
+    color:#fff;padding:44px 0 38px;margin-bottom:28px;
+    border-bottom:4px solid var(--accent);
+  }
+  header .wrap{padding-bottom:0;}
+  h1{font-size:30px;font-weight:700;letter-spacing:.02em;line-height:1.35;}
+
+  h2.industry-bar{
+    font-size:26px;color:#fff;font-weight:700;
+    background:linear-gradient(135deg,#0e2c54 0%,#123a6d 55%,#1c5cb8 100%);
+    padding:16px 22px;border-radius:8px;margin:40px 0 20px;
+    letter-spacing:.05em;border-left:5px solid var(--accent);
+  }
+
+  h2.sec{
+    font-size:20px;color:var(--brand);margin:34px 0 16px;
+    padding-left:13px;border-left:5px solid var(--accent);line-height:1.4;
+  }
+  h2.sec small{font-size:13px;color:var(--ink-3);font-weight:400;margin-left:10px;}
+
+  table{width:100%;border-collapse:collapse;background:var(--card);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);font-size:13.5px;}
+  thead th{background:var(--brand);color:#fff;text-align:left;padding:11px 14px;font-weight:600;font-size:13px;white-space:nowrap;}
+  tbody td{padding:10px 14px;border-top:1px solid var(--line);vertical-align:top;color:var(--ink-2);}
+  tbody tr:nth-child(even){background:#f8fafd;}
+  tbody tr:hover{background:#f0f5fc;}
+  td .sname{font-weight:700;color:var(--ink);}
+  .hot{display:inline-block;min-width:22px;text-align:center;background:var(--accent);color:#fff;border-radius:12px;font-size:12px;font-weight:700;padding:0 7px;}
+  .brokers{color:var(--ink-3);font-size:12.5px;}
+
+  .broker-card{
+    background:var(--card);border:1px solid var(--line);border-radius:12px;
+    box-shadow:var(--shadow);margin-bottom:18px;overflow:hidden;
+  }
+  .broker-head{
+    padding:13px 22px;background:linear-gradient(90deg,#f2f6fc,#ffffff);
+    border-bottom:1px solid var(--line);border-left:5px solid var(--brand);
+  }
+  .broker-head h3{font-size:17.5px;color:var(--brand);}
+  .broker-body{padding:16px 22px 20px;}
+
+  .part-cap{font-size:13px;font-weight:700;color:var(--brand-2);letter-spacing:.08em;margin:4px 0 6px;}
+  .part-cap + ul.views{margin-bottom:6px;}
+  ul.views{margin-left:20px;}
+  ul.views li{font-size:13.8px;color:var(--ink-2);margin-bottom:7px;}
+
+  .stock{margin-bottom:10px;}
+  .stock .sname{font-weight:700;color:var(--ink);}
+  .stock .logic{font-size:13.8px;color:var(--ink-2);}
+  .stock .logic b{color:var(--ink);}
+
+  footer{
+    margin-top:36px;padding:20px 4px 0;border-top:1px solid var(--line);
+    font-size:12.5px;color:var(--ink-3);
+  }
+  @media (max-width:640px){
+    h1{font-size:23px;}
+    .broker-body{padding:14px 16px;}
+    h2.industry-bar{font-size:22px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>260730（周四）日报</h1>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- ==================== 机械 ==================== -->
+  <h2 class="industry-bar">机械</h2>
+
+  <h2 class="sec">一、高频共识个股榜<small>被 ≥3 家券商集中推荐的标的</small></h2>
+  <table>
+    <thead>
+      <tr><th style="width:110px;">个股</th><th style="width:64px;">热度</th><th>推荐券商</th><th style="width:46%;">核心逻辑一句话</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><span class="sname">长川科技</span></td><td><span class="hot">3</span></td><td class="brokers">申万宏源 / 长江机械 / 西部机械</td><td>深度绑定H客户，国内综合型后道测试设备平台，SOC与存储国产化率极低兼具需求弹性最大，国产替代最顺畅方向。</td></tr>
+      <tr><td><span class="sname">华峰测控</span></td><td><span class="hot">3</span></td><td class="brokers">申万宏源 / 长江机械 / 西部机械</td><td>聚焦测试机赛道，覆盖模拟/数模混合/功率，正拓展SoC并向存储延伸，受益非H客户算力测试需求增长。</td></tr>
+      <tr><td><span class="sname">精智达</span></td><td><span class="hot">3</span></td><td class="brokers">申万宏源 / 长江机械 / 西部机械</td><td>从显示赛道跨界切入测试机，瞄准国产化率极低的存储测试赛道，26H1已获约13亿批量订单。</td></tr>
+      <tr><td><span class="sname">联讯仪器</span></td><td><span class="hot">3</span></td><td class="brokers">中金机械 / 申万宏源 / 西部机械</td><td>26H1预增801%-926%，光通信+半导体测试双击，科学仪器指数6月调整中国产化率提升方向核心标的。</td></tr>
+      <tr><td><span class="sname">联动科技</span></td><td><span class="hot">3</span></td><td class="brokers">申万宏源 / 长江机械 / 西部机械</td><td>从功率测试起家延伸至模拟/SoC，并购诺思达补齐存储测试线，产品布局已较完整。</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="sec">二、分券商观点详录<small>行业观点中的个股名单均保留原始数据列出顺序；仅个股专题类内容列入推荐个股</small></h2>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>申万宏源证券（半导体设备团队）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>全球半导体设备行业景气度持续向上，海外主要设备公司业绩边际加速、预期普遍上修，AI带来的需求被评估为远大于消费电子、汽车和互联网。海外周期领先国内1-2年，当前国内设备国产化率仍处低位，在国产化加速与AI需求共振下有望迎来历史性机遇。前期国内设备板块回调约40%，当前估值已具吸引力，全球扩张周期至少延续至2028-2029年。</li>
+        <li>后道测试设备是AI浪潮下少数兼具"需求弹性最大"和"国产化率最低"的环节。爱德万Q1收入同比+40%、净利翻倍，SOC测试机收入占比持续提升，下游算力收入占比突破95%；泰瑞达Q2营收同比翻倍、利润增近4倍，AI收入已占据绝大部分。爱德万将CY26年SOC测试机市场规模上调至105-115亿美元（中枢同比+61%），存储测试机至25-30亿美元（中枢同比+37%）。国内后道测试核心标的：长川科技、华峰测控、精智达、联动科技。</li>
+        <li>LAM（泛林集团）刻蚀/沉积龙头业绩创新高，下季指引超预期（预计营收77-85亿美元），在刻蚀、薄膜沉积领域具备极强话语权，HBM领域近乎绝对垄断。国内对标标的为北方华创、中微公司、拓荆科技。</li>
+        <li>KLA量检测高壁垒赛道，毛利率长期60%以上，先进封装带来量检测需求爆发（2026年同比增长超70%），量检测环节国产化率低于10%。国内对标：中科飞测、精测电子；晶圆级检测对应广立微。</li>
+        <li>东京电子（TEL）上调CY27全球WFE至1900亿美元（同比+27%），中国大陆仍为最大市场（占比30.4%），涂胶显影约90%份额近乎垄断，国内对标芯源微；薄膜沉积/扩散对标拓荆；干法刻蚀对标中微；清洗对标盛美上海。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>东吴证券（机械 / 环保团队）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>工程机械受益于高切低行情，估值处于历史最低水位。7月挖机销量预计国内同比15%+、出口同比25%-30%，出口持续高增。去年下半年汇兑负贡献边际改善，Q3起表观业绩有望修复。主机厂股价前期调整明显，徐工按明年100亿股权激励目标计算PE约10倍，三一按今年105亿净利计算PE仅17倍。持续推荐：徐工机械、三一重工、中联重科、恒立液压。</li>
+        <li>油服设备增长确定性突出。纽威股份推出股权激励，利润增速下限10%、完成全部激励需达20%；杰瑞股份主业利润稳定在35亿左右，短期受AIDC业务影响下跌，但AIDC业务支持全年及明年业绩增长，明年业绩对应估值仅15倍。中长期看中东替代石油、天然气发展及中国高端装备出海等长逻辑不变。</li>
+        <li>轨交设备避险配置：中国中车作为高股息、低估值、低波动标的，核心逻辑在于铁路装备老旧机车退役和存量更新的国家意愿投资。</li>
+      </ul>
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">龙净环保</span><div class="logic">大股东紫金矿业旗下矿山电网未覆盖，绿电建设成本较柴油发电可降本<b>70%</b>，支撑到28年盈利翻倍。25年底装机1.1GW，保守测算紫金内部需求4GW+，四倍空间。电动矿卡打开第二成长极，26-28年归母净利润14.1/17.5/20.2亿元，PE 18/14/12倍，重点推荐。</div></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>长江机械</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>海外半导体设备公司财报一致反馈：AI需求依然强劲，半导体设备景气度继续向上。前道设备、量检测及测试设备均受益于AI算力扩产，逻辑端主要驱动力来自先进制程、GPU及定制ASIC；存储端由HBM进一步向高性能DRAM、NAND扩散；先进封装持续提升量检测、刻蚀沉积及测试设备价值量。多数公司订单和下季度指引积极，普遍看好2027年需求延续。</li>
+        <li>泰瑞达Q2营收13.29亿美元（同比+104%），连续两个季度创历史新高；半导体测试收入11.22亿美元（同比+128%），AI相关SoC、存储测试需求保持强劲，AI需求已从GPU向定制ASIC、高速网络及数据中心相关芯片扩散。</li>
+        <li>爱德万FY26Q1销售额、营业利润及净利润均创新高，营业利润率51.7%，SOC测试机收入2596亿日元，GPU需求维持高位、ASIC需求进一步增长；存储测试机收入480亿日元，高性能DRAM需求明显提升。</li>
+        <li>泛林集团6月季度营收67.22亿美元（同比约+30%），收入、利润率及EPS均创历史新高；KLA FY26Q4营收36.58亿美元（同比+15%），先进封装成为新的重要增长点。继续看好半导体设备板块景气度及国产替代逻辑。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>西部机械</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>测试机双巨头业绩超预期+上修全年ATE市场空间，AI相关的SOC及存储扩产需求旺盛。爱德万FY26Q1收入3675亿日元（同比+39.3%），净利1748亿日元（同比+93.8%），大幅上调FY26业绩指引至收入17140亿日元（同比+52%），中国区收入694亿日元（同比+78%）。</li>
+        <li>爱德万再次上调CY26年ATE市场预测：SOC测试机市场规模从85-95亿美元上调至105-115亿美元（中枢同比+61%），存储测试机从22-27亿美元上调至25-30亿美元（中枢同比+37%）。泰瑞达预测今年存储测试机市场规模增长40%，预计2028年全球ATE市场规模至少200亿美元。</li>
+        <li>扩产叠加测试复杂度提升，两大测试机巨头业绩超预期。分选机环节鸿劲6月收入同样超预期。关注后续业绩兑现。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>中金机械（科学仪器团队）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">联讯仪器</span><div class="logic">7月公布26年上半年业绩预告，预计归母净利润<b>5.1-5.8亿元</b>，同比大增<b>801.96%-925.75%</b>，扣非净利润同比增长829.77%-959.94%。1-6M26电子测量仪器总计进口额15.62亿美元（同比-3.28%），出口额15.34亿美元（同比+32.58%），国产化率持续提升。</div></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>浙商大制造</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">继峰股份</span><div class="logic">座椅放量叠加格拉默提效，26H1业绩大幅预增。26Q2预计归母<b>2-2.7亿元</b>（同比+305%-439%），26H1预计归母<b>3.3-4.0亿元</b>（同比+116%-159%）。子公司格拉默26Q2经营性EBIT约2340万欧元、同比翻倍。与灵巧手领军企业灵心巧手合作成立宁波继巧智能机器人有限公司，布局机器人核心零部件。累计获27个座椅定点，生命周期总销售额超<b>1000亿元</b>。</div></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>天风电子</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">智立方</span><div class="logic">合资施耐博格精密运动平台国产替代空间广阔（纳米级精密运动平台是光刻机核心组成），国内检量测设备中长期空间800亿、配套平台市场约60亿，产品已供货中科飞测、埃芯半导体，毛利率70-80%。光芯片设备业务25-27年订单0.5/6/15亿持续高增。远期市值测算：施耐博格200亿+光芯片设备160亿+光模块液冷50亿+封测设备50亿+消费电子30亿，合计<b>490亿</b>目标市值，当前市值110亿。</div></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>天风电新</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>SOFC（固体氧化物燃料电池）从非主流到主流：技术路径百花齐放但核心是"电"紧缺大主线。BE以隔膜支撑为主（造价1800美金/KW），三环引领的阳极支撑（远期<500美金/KW），潍柴引领的金属支撑（200-300美金/KW）。三环当前隔膜板业务预计三季度环比翻倍，潍柴30MW 0-1示范运营。</li>
+        <li>AI升级链看好PCB、电源、电容的用量增加+ASP提升+份额提升三重逻辑，MLCC三季度价格变化最大。电的主线最看好SOFC预期差最大，其次进入拥产能为王阶段，潍柴气发出货指引1000台、产能储备3500-5000台具备大幅上修可能。</li>
+      </ul>
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">海亮股份</span><div class="logic">拟以9.7亿元收购铜箔子公司甘肃海亮18.69%股份，完成后持股67.3%。甘肃海亮26年1-5月净利<b>2.56亿</b>，出货3.5-3.6万吨，单吨盈利7k+，6月达8k+。股权比例提升增加明年40亿+利润置信度，对应<b>10倍PE</b>。</div></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>东莞证券</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>2026年6月挖掘机销量25445台（同比+35.32%），其中国内10898台（同比+33.95%）、出口14547台（同比+36.36%）。2026H1累计销量152320台（同比+26.39%），国内累计同比+20.40%，出口累计同比+33.55%。装载机6月销量15002台（同比+24.87%），电动装载机渗透率30.97%。</li>
+        <li>主机厂商发布涨价函（三一、徐工、柳工、山推涨价3%-5%），行业价格战格局有望扭转，盈利修复可期。出口方面，2026H1工程机械累计出口343.72亿美元（同比+22.01%），非洲拉美增速约44.10%。</li>
+        <li>建议关注：三一重工、徐工机械、中联重科、柳工、恒立液压。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ==================== 军工 ==================== -->
+  <h2 class="industry-bar">军工</h2>
+
+  <h2 class="sec">一、高频共识个股榜<small>被 ≥3 家券商集中推荐的标的</small></h2>
+  <table>
+    <thead>
+      <tr><th style="width:110px;">个股</th><th style="width:64px;">热度</th><th>推荐券商</th><th style="width:46%;">核心逻辑一句话</th></tr>
+    </thead>
+    <tbody>
+      <tr><td colspan="4" style="text-align:center;color:var(--ink-3);padding:16px;">本期数据中暂无被 ≥3 家券商集中推荐的个股。以下被2家券商推荐的核心标的值得关注：</td></tr>
+      <tr><td><span class="sname">国睿科技</span></td><td><span class="hot">2</span></td><td class="brokers">长江军工 / 兴证军工</td><td>军贸雷达绝对龙头，十四所唯一上市平台，关联交易映射2026年签单翻倍增长，预计利润增速逾30%。</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="sec">二、分券商观点详录<small>行业观点中的个股名单均保留原始数据列出顺序；仅个股专题类内容列入推荐个股</small></h2>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>长江军工</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>军工板块贝塔近期转负（2026年1月至今-1.28），主机厂估值进入历史极低分位。以PB/PS衡量，航发动力PB处于2020年以来约10%分位、PS约2.3%分位，中航西飞PB约1.1%分位，航空主机厂整体估值已达历史绝对低估水平。</li>
+        <li>军贸主机厂边际变化：外媒报道印尼采购24架、孟加拉采购24-40架歼-10CE军贸订单，产业链调研已基本证实，成飞为直接受益方。洪都航空2025年军贸营收显著增长、2026Q1军贸实现较好突破，后续L15机型大概率进一步突破。中航沈飞、中航西飞在产业链层面均已实现不同程度的军贸订单进展。</li>
+        <li>反无人机方向：俄乌冲突及2026年美伊冲突凸显无人机跃升为主战装备，激光与高功率微波边际成本更低，为十五五期间重点布局赛道。关注锐科激光（高功率激光器）、6912（高功率微波）。</li>
+        <li>2026年下半年关键催化：珠海航展（预计12月7日前，时隔两年再办，预计新型军机首次亮相）；十五五规划落地（预计10-12月，消除国内主机厂需求不确定性）。当前配置窗口核心推荐：中航西飞、国睿科技、锐科激光。</li>
+      </ul>
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">国睿科技</span><div class="logic">军贸雷达龙头，关联交易映射高景气：2026年向十四所预计签单<b>16.69亿元</b>（2025年实际5.31亿，翻两番），向电科国际预计签单<b>35.05亿元</b>（2025年实际13.39亿，翻两番），预计同类业务总金额83.89亿元（同比+120%）。预计2026年总营收增速<b>30%左右</b>，归母净利润增速有望<b>超过30%</b>。</div></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>兴证军工</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>军贸行业景气度上行，国睿科技为雷达领域绝对龙头。公司具备三大核心优势：军贸利润占比最高（2025年判断在60%以上，为A股军贸类上市公司中最高）；雷达领域断档式领先（依托中电科十四所，技术、产品谱系及全球产品力独一无二）；盈利水平独一档（2025年销售净利率18%以上，子公司国睿防务净利率26%以上）。</li>
+        <li>研究抓手——关联交易揭示签单翻倍增长：订单口径（映射未来1-3年营收）2026年预计向十四所签单16.69亿元（翻两番）、向电科国际签单35.05亿元（翻两番），预计同类业务总金额83.89亿元（同比+120%）。国睿防务承接十四所以国际化经营为导向的全部雷达业务资产，覆盖全部44个外销型号。</li>
+        <li>民品雷达政策驱动多线布局：气象雷达（十四五规划要求1千米高度覆盖率由54%提升至65%）、测雨雷达（全国需求缺口约6000台，预计2035年市场需求161亿元）、空管雷达、低空雷达（珠海横琴试点）。预计2026-2028年归母净利润分别为6.65/7.98/15.16亿元，对应2028年PE仅约20倍。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ==================== 房地产 ==================== -->
+  <h2 class="industry-bar">房地产</h2>
+
+  <h2 class="sec">一、高频共识个股榜<small>被 ≥3 家券商集中推荐的标的</small></h2>
+  <table>
+    <thead>
+      <tr><th style="width:110px;">个股</th><th style="width:64px;">热度</th><th>推荐券商</th><th style="width:46%;">核心逻辑一句话</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><span class="sname">华润置地</span></td><td><span class="hot">3</span></td><td class="brokers">东方证券 / 西部证券 / 东吴证券</td><td>头部央国企开发商首选，惠誉上调评级至A-，产品力核心保障去化与利润率，商业赛道高壁垒难以复刻。</td></tr>
+      <tr><td><span class="sname">招商蛇口</span></td><td><span class="hot">2</span></td><td class="brokers">东方证券 / 西部证券</td><td>优质央国企开发商，融资与土地资源优势突出，一旦房价企稳将收获集中度提升成长价值。</td></tr>
+      <tr><td><span class="sname">中国金茂</span></td><td><span class="hot">2</span></td><td class="brokers">东方证券 / 西部证券</td><td>头部央国企，具备"好房子"属性保障去化与利润率。</td></tr>
+      <tr><td><span class="sname">华润万象生活</span></td><td><span class="hot">2</span></td><td class="brokers">东吴证券 / 西部证券</td><td>轻资产商业赛道高壁垒，运营和产品难以复刻，超跌后迎修复。</td></tr>
+      <tr><td><span class="sname">建发国际</span></td><td><span class="hot">2</span></td><td class="brokers">东方证券 / 西部证券</td><td>优质央国企开发商，产品力核心。</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="sec">二、分券商观点详录<small>行业观点中的个股名单均保留原始数据列出顺序；仅个股专题类内容列入推荐个股</small></h2>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>长江地产</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>核心异象：2026年上半年重点20城二手房带看同比下降，而成交在高基数上仍实现增长，二者出现罕见反向波动。成交转化率异常偏高（类似2023年小阳春和2024年四季度），一线城市转化率更高。</li>
+        <li>成因分析：2025年下半年房价下跌过快导致购房决策周期拉长、形成带看积压，2026年上半年陆续转化为实际成交；同时房价急跌引发房东主动撤牌惜售（2025年10月起挂牌量下降），供给收缩叠加积压需求集中释放，促成上半年量价边际修复。</li>
+        <li>7月数据跟踪：重点20城二手房成交量同比仍有高个位数增长（超预期），但带看量同比下降7.2%。一线城市矛盾突出（成交量同比+6%、带看量同比-22.9%），强产业城市（合肥、武汉、苏州、宁波）匹配度较好。</li>
+        <li>后续展望：后续二手房成交大概率向偏弱的带看回归，整体压力尚可控（带看同比仅降7%）。供给端6-7月挂牌量出现环比回升，供需关系边际走弱，预计价格面临一定压力，但高频指标仍明显好于2025年下半年同期，已现结构性触底迹象，大概率不会重演2025年下半年的快速急跌。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>东方证券（房地产团队）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>7月政治局会议政策定调：稳定房地产市场较4月删除"努力"二字，语气稍弱但符合政策一贯性。政府自2018年至今房地产政策框架为"防风险、保民生和去金融化"，预计未来1-2年仍在此框架内，无需期待超常规政策。地方层面下阶段政策重心为城市更新和保障房，公积金贷款政策是今年核心调整方向。</li>
+        <li>基本面结构性修复信号：核心城市中北京、上海、深圳挂牌量持续走低，供给端抛压持续缓解；三城租金已连续四个月上涨，作为房价企稳有效领先指标；统计局大中城市房价已持续4个月上涨。但7-8月为传统淡季，数据会环比走弱。</li>
+        <li>投资策略：短期金九银十数据将恢复向好，叠加9月底传统政策预期，存在交易性窗口；更看好2027年小阳春（明年1-2季度）楼市更大范围企稳。个股关注具备"好房子"属性的头部央国企，推荐：华润置地（首选）、中国金茂、绿城中国、招商蛇口。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>西部证券（房地产团队）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>市场已从急跌转为缓跌。新房呈现"缩量涨价"，二手房呈现"量涨价缩（或微跌）"。上海房价已连续数月环比回升具备企稳态势，多数核心城市仍在探底。板块逻辑：基本面仍在探底，但极低估值和消费品属性使其在市场风格切换中获加仓机会，当前基金地产持仓仍为低配中的低配。</li>
+        <li>三大投资主线：主线一优质央国企开发商，在供给收缩、融资偏紧环境下产品力是核心，关注华润置地、招商蛇口、建发国际、中国金茂。主线二物业服务板块，经历行业调整后公司治理优化，具备轻资产、偏消费、强现金流属性，超跌后迎修复，关注绿城服务、保利物业、万物云。主线三优质商业地产，受益消费方向市场偏移，关注华润万象生活、龙湖集团、新城控股。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>东吴证券（房地产团队）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>行业基本面逐步见底：上半年全国商品房销售面积与金额同比下降约10%，降幅持续收窄；27城二手房成交面积仅微降，韧性更强。供给端广义库存同比下降约15%，新房去化周期缩短；土地市场延续缩量提质，优质国央企更聚焦核心地块。</li>
+        <li>全年展望：中性假设下商品房销售面积与金额同比降幅有望收窄至5%，开发投资额同比下降约10%，下行斜率放缓。政治局会议强调稳定市场，叠加因城施策、公积金提额等地方政策，居民置业成本有望继续下降。核心城市上海、北京、深圳的成交量和成交价已释放企稳修复信号。</li>
+        <li>投资主线：商业赛道高壁垒行业，运营和产品难以复刻，推荐重资产的华润置地和轻资产的华润万象生活。中介赛道存量房时代交易占比持续提升，推荐龙头平台贝壳，受益于二手房市场韧性和服务变现弹性。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>国泰海通证券（房地产团队）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>2026年以来政策不断细化：4月28日中央政治局会议提出"努力稳定房地产市场，扎实推进城市更新"，6月5日住建部发布《住房公积金管理条例（修订征求意见稿）》。</li>
+        <li>基本面销售和价格增速相对26年一季度触底回升：1H2026全国商品房累计销售额3.79万亿元（同比-13.6%，一季度为-16.7%）。1H2026一线/二线/三线城市房价同比增速分别为-1.3%/-3.1%/-4.2%（一季度分别为-2.2%/-3.3%/-4.0%），均有回升。</li>
+        <li>板块估值继续探底：截至2026年7月28日房地产板块PB-TTM为0.78倍，相对沪深300折价率46.6%。1H2026基金配置房地产股票市值275.8亿元（同比-24.4%），占全部股票市值比例仅0.37%，处偏低水平。"地产基"价值显现——配置房地产股票市值超50%的主动型基金共9只，地产投资市值占基金净值平均比例65.7%。</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p><b>数据来源：</b>进门财经（Comein）平台之路演纪要、券商分析师点评及内资研究报告（检索区间 2026-07-30 至 2026-07-30）。整理口径：行业性观点与个股名单均按原始数据顺序列出；仅主线围绕单一个股的专题内容列入"推荐个股"。个别标的由其他团队覆盖但与本行业产业链高度相关的，已注明。</p>
+    <p style="margin-top:6px;"><b>免责声明：</b>本简报仅为信息整理与学习交流之用，不构成任何投资建议。所载券商观点不代表本平台立场，预测数据存在不确定性，据此操作风险自担。股市有风险，投资需谨慎。</p>
+  </footer>
+
+</div>
+</body>
+</html>
