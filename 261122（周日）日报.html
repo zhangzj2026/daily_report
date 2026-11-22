@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>261121（周六）日报</title>
+<style>
+  :root{
+    --bg:#f4f6fa;
+    --card:#ffffff;
+    --ink:#1a2333;
+    --ink-2:#3d4a63;
+    --ink-3:#6b7a96;
+    --line:#e3e8f2;
+    --brand:#123a6c;
+    --brand-2:#1c5cb8;
+    --accent:#c0392b;
+    --shadow:0 1px 3px rgba(18,58,109,.06),0 6px 24px rgba(18,58,109,.07);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Microsoft YaHei","PingFang SC","Segoe UI",system-ui,-apple-system,sans-serif;
+    line-height:1.75;
+    font-size:15px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1060px;margin:0 auto;padding:0 22px 60px;}
+  header{
+    background:linear-gradient(135deg,#0e2c54 0%,#123a6c 55%,#1c5cb8 100%);
+    color:#fff;padding:44px 0 38px;margin-bottom:28px;
+    border-bottom:4px solid var(--accent);
+  }
+  header .wrap{padding-bottom:0;}
+  h1{font-size:30px;font-weight:700;letter-spacing:.02em;line-height:1.35;text-align:center;}
+  h2.industry-bar{
+    font-size:22px;color:#fff;margin:36px 0 18px;
+    padding:14px 22px;
+    background:linear-gradient(135deg,#0e2c54 0%,#123a6c 55%,#1c5cb8 100%);
+    border-radius:8px;
+    border-left:5px solid var(--accent);
+    line-height:1.4;
+  }
+  h2.sec{
+    font-size:20px;color:var(--brand);margin:24px 0 14px;
+    padding-left:13px;border-left:5px solid var(--accent);line-height:1.4;
+  }
+  h2.sec small{font-size:13px;color:var(--ink-3);font-weight:400;margin-left:10px;}
+  table{width:100%;border-collapse:collapse;background:var(--card);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);font-size:13.5px;}
+  thead th{background:var(--brand);color:#fff;text-align:left;padding:11px 14px;font-weight:600;font-size:13px;white-space:nowrap;}
+  tbody td{padding:10px 14px;border-top:1px solid var(--line);vertical-align:top;color:var(--ink-2);}
+  tbody tr:nth-child(even){background:#f8fafd;}
+  tbody tr:hover{background:#f0f5fc;}
+  td .sname{font-weight:700;color:var(--ink);}
+  .hot{display:inline-block;min-width:22px;text-align:center;background:var(--accent);color:#fff;border-radius:12px;font-size:12px;font-weight:700;padding:0 7px;}
+  .brokers{color:var(--ink-3);font-size:12.5px;}
+  .broker-card{
+    background:var(--card);border:1px solid var(--line);border-radius:12px;
+    box-shadow:var(--shadow);margin-bottom:18px;overflow:hidden;
+  }
+  .broker-head{
+    padding:13px 22px;background:linear-gradient(90deg,#f2f6fc,#ffffff);
+    border-bottom:1px solid var(--line);border-left:5px solid var(--brand);
+  }
+  .broker-head h3{font-size:17.5px;color:var(--brand);}
+  .broker-body{padding:16px 22px 20px;}
+  .part-cap{font-size:13px;font-weight:700;color:var(--brand-2);letter-spacing:.08em;margin:4px 0 6px;}
+  .part-cap + ul.views{margin-bottom:6px;}
+  ul.views{margin-left:20px;}
+  ul.views li{font-size:13.8px;color:var(--ink-2);margin-bottom:7px;}
+  .stock{margin-bottom:10px;}
+  .stock .sname{font-weight:700;color:var(--ink);}
+  .stock .logic{font-size:13.8px;color:var(--ink-2);}
+  .stock .logic b{color:var(--ink);}
+  .empty-note{background:var(--card);border:1px dashed var(--line);border-radius:8px;padding:14px 18px;color:var(--ink-3);font-size:13.5px;text-align:center;margin-bottom:18px;}
+  footer{
+    margin-top:36px;padding:20px 4px 0;border-top:1px solid var(--line);
+    font-size:12.5px;color:var(--ink-3);
+  }
+  @media (max-width:640px){
+    h1{font-size:23px;}
+    .broker-body{padding:14px 16px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>261121（周六）日报</h1>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <h2 class="industry-bar">机械</h2>
+
+  <h2 class="sec">一、高频共识个股<small>被 ≥3 家券商集中推荐的标的</small></h2>
+  <div class="empty-note">本期无被 ≥3 家券商集中推荐的个股</div>
+
+  <h2 class="sec">二、分券商观点详录</h2>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>浙商证券（新兴产业团队）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>AI大模型突破催化机器人板块行情：前期市场对机器人泛化能力及明后年外售放量预期的担忧这一核心矛盾已解。近期全球AI大模型赋能机器人持续取得实质性进展：GPT-6.2 Astra、Claude Fable 5.2等通用大模型持续提升真机操作能力；Gemini 4 Hydrogen将专用具身推理能力融入通用模型，进一步打通仿真与真机部署；NVIDIA GR00T 2通过世界动作模型联合预测视频与动作；华为云正式推出首款昇腾原生具身世界模型CloudRobo-WM1.2，并开放模型及工具链。通用模型、专用VLA、世界模型多条技术路线持续突破，机器人大脑正从任务理解、动作生成向物理预测、真实交互及持续学习延伸，叠加下半年产能持续爬坡，以及12月特斯拉即将发布展示机器人AI能力的视频催化，看好板块行情具备持续性。T链核心标的：峰岹科技（空心杯电机+数采传感器）、新泉股份（关节模组+覆盖件+数采手套）、凯迪股份（新泉股份核心合作伙伴+机器人全产业链布局）、科达利（谐波减速器）、恒立液压（丝杠+电机）。</li>
+        <li>3D打印行业深度报告：AI启幕造物新程，软件生态拓宽竞争边界。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>国金证券</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">推荐个股</div>
+      <div class="stock">
+        <div class="sname">海油工程：再落卡塔尔8亿美元海管大单，中东累计签约破500亿</div>
+        <div class="logic">公司11月20日公告与卡塔尔能源签署"MM-EPIC2"总包项目合同，金额约<b>8亿美元（约53.7亿元）</b>，建设内容包括逾100公里海管、电缆、脐带缆铺设及相关设施安装，建设期限66个月。量级上相当于公司三季报在手订单727亿元的约7%，签约后<b>中东区域累计签约订单已突破500亿元</b>。卡塔尔市场从"单项目中标"升级为BH（约40亿美元）、RUYA EPCI 09、MM-EPIC2的多项目组合，客户关系由一次性中标转向框架性准入，"十五五"海外收入中枢有望系统性上移。能力卡位上，EPIC模式管理层级与价值量显著高于纯施工分包；"海管+海缆+脐带缆"管线安装细分包正是公司海管制造、铺管船、缆总成一体化能力的靶心，凸显中国海工装备国际竞争力提升。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>浙商证券</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">推荐个股</div>
+      <div class="stock">
+        <div class="sname">弘信电子：签署7.45亿元算力技术服务协议</div>
+        <div class="logic">公司控股子公司燧弘华创与Z公司签署《算力技术服务协议》，协议含税总金额<b>7.45亿元</b>，服务期限至2028年1月29日，Z公司经营主要涉及具身智能及物理AI。在物理AI领域，公司具备国内少有的"软硬结合"算力全栈能力：软能力上提供普惠算力调度、MaaS平台底座、仿真与数据生产能力，并将在常熟建设高性能边缘算力及高质量数据群；硬支撑上依托柔性电子技术优势为具身智能提供"物理触觉"。公司推动Token工厂向2.0阶段演进，与自变量机器人、宇树科技、智平方等企业推进生态合作。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>中信证券（主题策略）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">推荐个股</div>
+      <div class="stock">
+        <div class="sname">永茂泰：铝液直供筑底，镁合金机器人零部件打开第二曲线</div>
+        <div class="logic">"轻金属跨界"主题重点品种。主业铝液直供放量：2026年前三季度营收<b>47.67亿元</b>，2026H1对拓普集团供应铝合金2.31万吨、<b>同比大增300%</b>；但受镁合金量产初期投入及良率爬坡拖累，Q3单季毛利率降至3.59%，前三季度经营现金流净流出5.97亿元。机器人镁合金业务边际变化显著：<b>9.98亿元定增预案</b>已披露；2026H1镁合金收入1925.96万元、已超2025年全年两倍，2026年9月单月镁合金销售收入已超1000万元；公司已取得*麦机器人镁合金结构件定点，多家客户已交付各类传动件、结构件和连接件产品。镁合金密度较铝轻33%、较钢轻75-77%，直击机器人"减重"刚需。管理层明确机器人零部件业务走"内生发展+外延并购"双轮路径。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>国海证券</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>周度速览（11.13-11.20）：全球权益同步大幅下挫，成长风格集中回调。海外权益普遍走弱，美股标普500周跌8.61%、纳斯达克周跌10.02%，周五纳指单日大跌5.28%，标普500连续7个交易日收跌创2020年以来最长连跌纪录，VIX收盘35.89点；港股恒生指数跌5.19%、恒生科技跌7.92%。A股全周仅大盘价值收涨3.53%，小盘成长回撤8.44%跌幅最大，资金向大盘价值防御方向切换。申万一级行业中银行、食品饮料等防御板块相对抗跌，传媒、机械设备、通信等成长赛道跌幅靠前。COMEX黄金跌8.97%、布伦特原油跌9.87%，商品风险偏好明显回落。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>市场资讯</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>美批准71家公司继续进口无人机等产品：路透报道，美国联邦通信委员会周五表示，2026年已批准71家公司继续进口无人机、无线路由器、机器人和电源逆变器，这些产品原本将根据美国国家安全限制被禁止进口。</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="industry-bar">军工</h2>
+
+  <h2 class="sec">一、高频共识个股<small>被 ≥3 家券商集中推荐的标的</small></h2>
+  <div class="empty-note">本期无被 ≥3 家券商集中推荐的个股</div>
+
+  <h2 class="sec">二、分券商观点详录</h2>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>市场资讯</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>SpaceX星舰转向汽车工厂式规模化生产：在Starfactory内部，SpaceX目前的完工节奏为每2周完成1艘Starship上面级（每年约26艘）、每4周完成1枚Super Heavy助推器（每年约13枚）。制造场地拥有约100万平方英尺制造空间，成排的Starship头锥编号最高到Ship 51，多艘星舰和多枚助推器同步组装；在产大多数飞行器计划用于部署Starlink V3卫星，另有一个Starship头锥已开出舷窗，可能正在为NASA阿尔忒弥斯月球着陆器开展开发。现有每座巨型总装厂房可容纳约5-6架飞行器同时组装，Starbase正在建设约70万平方英尺的Gigabay厂房、最多可同时容纳24架飞行器组装。Starship已开始执行载荷部署任务，SpaceX正全力朝着大规模量产目标推进。</li>
+        <li>顺丰暂停军队采购业务影响小但存舆情风险：顺丰暂停参加军队采购活动，对公司目前业务影响很小，这方面收入体量不大；但舆情风险明显大于实际业务影响，需观察后续是否影响其他客户合作。据称此次被暂停合作的有1-200家民营企业，不单是顺丰一家。</li>
+        <li>美批准71家公司继续进口无人机等产品：美国联邦通信委员会表示，2026年已批准71家公司继续进口无人机、无线路由器、机器人和电源逆变器，这些产品原本将根据美国国家安全限制被禁止进口。</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="industry-bar">房地产</h2>
+
+  <h2 class="sec">一、高频共识个股<small>被 ≥3 家券商集中推荐的标的</small></h2>
+  <div class="empty-note">本期无被 ≥3 家券商集中推荐的个股</div>
+
+  <h2 class="sec">二、分券商观点详录</h2>
+  <div class="empty-note">2026年11月21日（周六）无房地产行业路演纪要、券商点评与内资研报数据</div>
+
+  <footer>
+    <p><b>数据来源：</b>进门财经（Comein）MCP——路演纪要 / 券商点评 / 内资研报。机械：路演纪要0篇 / 券商点评7条 / 内资研报0篇　|　军工：路演纪要0篇 / 券商点评3条 / 内资研报0篇　|　房地产：路演纪要0篇 / 券商点评0条 / 内资研报0篇　|　检索区间：2026年11月21日</p>
+    <p style="margin-top:6px;"><b>整理口径：</b>行业性观点与个股名单均按原始数据顺序列出；仅主线围绕单一个股的专题内容列入"推荐个股"。跨行业内容中仅提取本行业相关部分。个股名单严格保留原始列出顺序，不做色块高亮。</p>
+    <p style="margin-top:6px;"><b>免责声明：</b>本简报仅为信息整理与学习交流之用，不构成任何投资建议。所载券商观点不代表本平台立场，预测数据存在不确定性，据此操作风险自担。股市有风险，投资需谨慎。</p>
+  </footer>
+
+</div>
+</body>
+</html>
