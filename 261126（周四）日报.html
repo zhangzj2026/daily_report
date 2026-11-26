@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>261126（周四）日报</title>
+<style>
+  :root{
+    --bg:#f4f6fa;
+    --card:#ffffff;
+    --ink:#1a2333;
+    --ink-2:#3d4a63;
+    --ink-3:#6b7a96;
+    --line:#e3e8f2;
+    --brand:#123a6d;
+    --brand-2:#1c5cb8;
+    --accent:#c0392b;
+    --shadow:0 1px 3px rgba(18,58,109,.06),0 6px 24px rgba(18,58,109,.07);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Microsoft YaHei","PingFang SC","Segoe UI",system-ui,-apple-system,sans-serif;
+    line-height:1.75;
+    font-size:15px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1060px;margin:0 auto;padding:0 22px 60px;}
+
+  header{
+    background:linear-gradient(135deg,#0e2c54 0%,#123a6d 55%,#1c5cb8 100%);
+    color:#fff;padding:44px 0 38px;margin-bottom:28px;
+    border-bottom:4px solid var(--accent);
+  }
+  header .wrap{padding-bottom:0;}
+  h1{font-size:30px;font-weight:700;letter-spacing:.02em;line-height:1.35;text-align:center;}
+
+  h2.industry-bar{
+    background:linear-gradient(135deg,#0e2c54 0%,#123a6d 55%,#1c5cb8 100%);
+    color:#fff;font-size:22px;font-weight:700;padding:14px 22px;border-radius:10px;
+    margin:40px 0 20px;letter-spacing:.06em;box-shadow:var(--shadow);
+  }
+
+  h2.sec{
+    font-size:20px;color:var(--brand);margin:30px 0 16px;
+    padding-left:13px;border-left:5px solid var(--accent);line-height:1.4;
+  }
+  h2.sec small{font-size:13px;color:var(--ink-3);font-weight:400;margin-left:10px;}
+
+  table{width:100%;border-collapse:collapse;background:var(--card);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);font-size:13.5px;}
+  thead th{background:var(--brand);color:#fff;text-align:left;padding:11px 14px;font-weight:600;font-size:13px;white-space:nowrap;}
+  tbody td{padding:10px 14px;border-top:1px solid var(--line);vertical-align:top;color:var(--ink-2);}
+  tbody tr:nth-child(even){background:#f8fafd;}
+  tbody tr:hover{background:#f0f5fc;}
+  td .sname{font-weight:700;color:var(--ink);}
+  .hot{display:inline-block;min-width:22px;text-align:center;background:var(--accent);color:#fff;border-radius:12px;font-size:12px;font-weight:700;padding:0 7px;}
+  .brokers{color:var(--ink-3);font-size:12.5px;}
+
+  .broker-card{
+    background:var(--card);border:1px solid var(--line);border-radius:12px;
+    box-shadow:var(--shadow);margin-bottom:18px;overflow:hidden;
+  }
+  .broker-head{
+    padding:13px 22px;background:linear-gradient(90deg,#f2f6fc,#ffffff);
+    border-bottom:1px solid var(--line);border-left:5px solid var(--brand);
+  }
+  .broker-head h3{font-size:17.5px;color:var(--brand);}
+  .broker-body{padding:16px 22px 20px;}
+
+  .part-cap{font-size:13px;font-weight:700;color:var(--brand-2);letter-spacing:.08em;margin:4px 0 6px;}
+  .part-cap + ul.views{margin-bottom:6px;}
+  ul.views{margin-left:20px;}
+  ul.views li{font-size:13.8px;color:var(--ink-2);margin-bottom:7px;}
+
+  .stock{margin-bottom:10px;}
+  .stock .sname{font-weight:700;color:var(--ink);}
+  .stock .logic{font-size:13.8px;color:var(--ink-2);}
+  .stock .logic b{color:var(--ink);}
+
+  .empty-note{font-size:13.8px;color:var(--ink-3);background:var(--card);border:1px dashed var(--line);border-radius:10px;padding:14px 18px;}
+
+  footer{
+    margin-top:36px;padding:20px 4px 0;border-top:1px solid var(--line);
+    font-size:12.5px;color:var(--ink-3);
+  }
+  @media (max-width:640px){
+    h1{font-size:23px;}
+    .broker-body{padding:14px 16px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>261126（周四）日报</h1>
+  </div>
+</header>
+
+<div class="wrap">
+
+
+  <h2 class="industry-bar">机械</h2>
+
+  <h2 class="sec">一、高频共识个股<small>被 ≥3 家券商集中推荐的标的</small></h2>
+  <table>
+    <thead>
+      <tr><th style="width:110px;">个股</th><th style="width:64px;">热度</th><th>推荐券商</th><th style="width:46%;">核心逻辑一句话</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><span class="sname">拓普集团</span></td><td><span class="hot">4</span></td><td class="brokers">浙商汽车 / 中泰电新 / 长江汽车 / 进门纪要组（调研更新）</td><td>T链价值量最大供应商（整体超5万、自制率20%），本月周产1250、部分产品达2000，长江汽车看2000亿市值翻倍空间。</td></tr>
+      <tr><td><span class="sname">福莱新材</span></td><td><span class="hot">4</span></td><td class="brokers">中泰电新 / 华安机械 / hf大制造 / 进门纪要组（转债策略）</td><td>柔性触觉传感器向灵心巧手批量供货并与北美大客户签NDA，数采手套+触觉传感器双卡位。</td></tr>
+      <tr><td><span class="sname">安培龙</span></td><td><span class="hot">3</span></td><td class="brokers">中泰电新 / 天风电新 / hf大制造</td><td>小鹏IRON最大力矩传感器供应商（ASP最大），视触传感核心标的。</td></tr>
+      <tr><td><span class="sname">宇树科技</span></td><td><span class="hot">3</span></td><td class="brokers">申万机械 / 中泰电新 / hf大制造</td><td>全球四足（32.4%份额）与人形机器人销量第一，申万首次覆盖给予买入评级。</td></tr>
+      <tr><td><span class="sname">上纬新材</span></td><td><span class="hot">3</span></td><td class="brokers">进门纪要组（爱仕达×智元）/ 中泰电新 / hf大制造</td><td>智元机器人控股主体与核心上市平台，深度受益灵犀系列千台量产。</td></tr>
+      <tr><td><span class="sname">新泉股份</span></td><td><span class="hot">3</span></td><td class="brokers">浙商汽车 / 华泰证券 / 进门纪要组（T链点评）</td><td>机器人执行器核心标的，入股长坂科技5%布局丝杠/减速器，T链价值量通胀受益者。</td></tr>
+      <tr><td><span class="sname">日盈电子</span></td><td><span class="hot">3</span></td><td class="brokers">浙商汽车 / 华安机械 / 中泰电新</td><td>电子皮肤+数采手套双线布局，北美基地处于客户验证与小批量试制阶段。</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="sec">二、分券商观点详录</h2>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>中信证券</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>Token工厂行业：2026年AI应用由单轮对话向长程任务演进，市场需求远大于供给；中性测算2030年中国独立第三方Token工厂收入空间近千亿元，稳态毛利率20%~30%；给予2026年15倍左右PS，技术领先与生态领先头部标的可看20~25倍成长性溢价；最大护城河为异构芯片适配与跨模型推理优化，自研推理引擎较开源框架Token产出提升至少40%。</li>
+      </ul>
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">茂莱光学：</span><span class="logic">国内半导体精密光学领先企业，前三季度收入同比+42%、半导体收入占比超60%；2025年全球量检测光学市场约53亿元、光刻光学约50亿美元，国产化空间大；客户覆盖Camtek、KLA、Onto、上海微等；预计2026-2028年收入约10/13/17亿元，2027-2028年归母净利逐步到2亿元以上。</span></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>高盛</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>人形机器人：中国仿人机器人行业AI能力提高、投资加速，更强前沿模型使机器人任务性能显著提升；前沿AI可处理推理与规划，使机器人公司专注运动、操作和现实部署；数据收集、训练机队和初始部署投资增加，利好不断扩大的中国零部件供应商；预计2027年选择性商业化，持续收益取决于生产力提高和重复订单。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>华泰证券</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>具身智能：工信部发布5项人形机器人行业标准、具身数据国家标准启动研制；AI大厂开始用通用大模型直接控制机器人，Optimus将于12月初公开亮相；通用大模型正把能力从任务规划推向动作控制，具身智能的比较正从演示效果转向可量化的工位指标。</li>
+        <li>市场策略：底部信号突破阈值、中期下行空间不大（预计底部3350-3400），但建议情绪/资金负反馈/宏观扰动三点中两点缓解再转攻；美方产能过剩301调查对华上限7.5%（按吉隆坡共识不超20%），关注12月中美磋商。</li>
+      </ul>
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">新泉股份：</span><span class="logic">入股长坂科技5%并战略合作机器人零件，长坂具备精密传动设计+专用机床研发+精密制造完整体系，产品含反向式行星滚柱丝杠/摆线减速器/谐波减速器并向灵巧手微型丝杠延伸；合作加快旋转与直线执行器，叠加北美客户深度关系与本地化产能优势，望成价值量通胀Tier1。</span></div>
+      <div class="stock"><span class="sname">继峰股份：</span><span class="logic">机器人进展超预期：面套压印与缝纫工序进真实产线，3周装配近万件成功率100%；Q2部署30+台、Q3超130台、全年近千台，27年外售信心足；单台BOM 22.5万、降本30-50%；26/27年7/10亿利润仅11.6x、未含机器人预期。</span></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>长江证券</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">科达制造：</span><span class="logic">森大集团15元/股（溢价约30%）受让5%股份，沈延昌及一致行动人持股升至11.91%，彰显对公司价值的认可；海外建材瓷砖产能将从2025年2亿平提升至2028年3亿平（复合增速约14%），机械装备从建材延伸至新能源，包头50万吨负极材料一体化项目具备成本优势；预计2026-2027年业绩约25.4、29.2亿元，对应估值约9、8倍，重点推荐。</span></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>国泰海通证券</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">德昌电机控股：</span><span class="logic">2026/27财年上半年收入18.5亿美元（+1%），工业IPG收入同比+11%由新项目量产与新业务订单驱动；受益AI基础设施扩张，依托粉末冶金、精密制造、车规级制造能力布局AI数据中心液冷泵、SOFC固体氧化物燃料电池、金属氢化物储能组件；与上海机电设立合资主体布局人形机器人业务。</span></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>天风汽车</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>小鹏机器人及智驾业务交流：S2大脑由VTL负责规划交互、S1小脑由VLA负责实时控制、S0负责底层控制，云端WorldGPT世界模型蒸馏为端侧专用模型；采取"重端轻云"部署，核心零部件自研自制，自研算力可运行通用芯片5-10倍规模模型；商业模式为硬件高毛利+大脑功能云端订阅，面向中小企业销售；机器人数据训练量预计为汽车的几十到几百倍，RSI已在MIL/HIL/仿真评测全自动循环落地。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>华鑫证券</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>机器人：宇树科技创始人王兴兴在WISE2026大会判断，5到10年内中国机器人产量有望超过汽车、年产量超过2000万台；浙江人形机器人创新中心推出SPIRE 2.0全链路任务对齐具身智能体系。</li>
+        <li>液冷：银轮股份首条年产1.5万台数据中心大型板换产线预计12月正式投产，可覆盖50kW-2500kW全功率段CDU系统；梅州子夏智算中心项目备案办结（总算力功率7440kW，含160个35kW冷板式液冷机柜）。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>浙商证券</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>机器人日报：特斯拉英国官方号发布Optimus V3展示安排，12月5-6日在伦敦巴特西发电站与观众互动；云深处高交会首秀重载四足机器人绝影X50（50公斤负载3米/秒奔跑2公里以上）；众擎展示具身基础模型EngineAI Awaken-HI（5万小时人类动作数据训练、真机任务成功率90%）；拓邦电机发布TH09/TH14/TH21三款灵巧手（主动自由度9/14/21）；凯龙高科子公司中标浙江人形机器人桌面级灵巧手检测设备项目。</li>
+        <li>关注标的：执行器拓普集团/新泉股份，丝杠天创股份，减速器斯菱智驱/来福谐波，电机凯迪股份，轻量化福赛科技/模塑科技，电子皮肤岱美股份/日盈电子，结构件旭升集团，数据采集凌云光/利亚德/华依科技。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>国联民生</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>智谱GLM5.5预计12月发布（路透社"延后至27Q1"为不实消息）：参数量2-3T、性能真实达到Fable级别，具身智能表现突出、与国内主流机器人公司持续深化合作；万卡950DT集群用于大模型预训练前期准备顺利，预计明年能够跑通。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>中泰电新</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>Optimus现场体验有望启动：TeslaUK官宣12月5-6日在伦敦巴特西电站滑冰场展示；马斯克曾提到11-12月有望展示Optimus非预编程演示视频，特斯拉2026年度股东大会12月3日举行；关注T链容量（恒立/科达利/浙江荣泰）、T链趋势（斯菱/北特/恒帅）、T2主力（东力/五洲/金沃）、数采触觉（汉威/福莱/日盈）、视触传感（奥比/安培龙）、国产本体（宇树/上纬/优必选）、电机丝杠谐波（震裕/雷赛/步科/伟创/兆威/绿的/来福）。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>中泰机械</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>软件加速下硬件供需矛盾突出（Andrew Kang《机器人硬件的重大瓶颈》）：大模型有望大幅降低传统工业机器人系统集成成本；模型研发、真机训练、评测本身就需要大量机器人，明年AI实验室可能成为机器人硬件最大买家；2026H1全球人形机器人出货约1.9万台、中国厂商占比超97%；软件端加速突破与硬件端有限供给弹性的矛盾下，持续看好T链。</li>
+      </ul>
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">北特科技：</span><span class="logic">有望直供北美大客户，奠定丝杠核心供应商地位：与三花排他协议到期后原有合作不变，与北美大客户全新供应关系即将达成、身体丝杠成套供货；从灵巧手微型滚珠丝杠到身体行星滚柱丝杠，有望同时占据两大核心传动环节。</span></div>
+      <div class="stock"><span class="sname">华翔股份：</span><span class="logic">极具预期差标的：物理AI聚焦工业场景落地"最后一公里"（上万台数控机床日产1.2亿条真实工业数据、已落地600+AI应用场景，2026年已签合同9000万）；液冷收购浩洋汇丰55%股权切入AVC/英维克渠道、打通NV与华为昇腾体系；机器人谐波减速器零部件已量产、批量客户含美的/三花/绿的谐波/杉川，顺德130亩园区落地；预计27年综合利润9亿+，目标市值180亿。</span></div>
+      <div class="stock"><span class="sname">宏英智能：</span><span class="logic">矿山智能化闭环核心标的，深度绑定英伟达物理AI生态：宝马展与三一等7家签署合作协议，发布E-Term端侧计算单元、E-Grid边缘算力方舱、E-Top云端算力集群；存量改造5年基准空间200亿、中期年利润可达5亿，看好150亿市值。</span></div>
+      <div class="stock"><span class="sname">亿嘉和：</span><span class="logic">新董事长杨友桂履新（曾任华为数字能源全球营销服总裁、华为云全球营销服总裁），与华为产业协同全面深化；作为华为云CloudRobo具身世界模型深度绑定伙伴，高端康养、商用清洁、高端医疗场景均有实质进展；携手苏美达进军新能源运维。</span></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>长江汽车</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">拓普集团：</span><span class="logic">持续看好物理AI主线行情，龙头调整即是买入时机：12月特斯拉产品展示及北美其他科技公司具身发布密集，拓普是T链价值量最大供应商（整体超5万、自制2.5万、自制率20%），16条定转子全自动化线、谐波线顺利爬产，本月周产1250、部分产品达2000；同时拓展其他北美科技企业尚未被定价；主业明年海外放量有望达30亿+，综合看2000亿市值、当下具备翻倍空间。</span></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>天风电新</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>小鹏科技日机器人要点：IRON身高1.7米、体重62公斤、76个自由度；灵巧手1:1仿人、单手21自由度、支持33类操作；全身1000+触觉触点、分辨率毫米级；5万平机器人数据工厂覆盖250场景、15类岗位；27年1月开启硬件量产、27Q2正式对外发布。</li>
+      </ul>
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">安培龙：</span><span class="logic">小鹏特别重点强调手臂和力矩重要性，公司作为ASP最大的力矩传感器供应商充分受益。</span></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>申万汽车</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">继峰股份：</span><span class="logic">继巧机器人实测100%成功率：面套压印、花样机缝纫2个场景稳定运行3周，控制精度0.5毫米、频率1000赫兹；经济性已打平（缝纫工人年成本10-12万 vs 机器人年成本约7.5万）；2027年计划内部部署962台，2030年集团内部潜在空间约19亿、全球缝纫领域超万亿；主业市值约150亿（明年10-11亿×15倍），机器人与检测设备期权白送。</span></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>申万机械</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">宇树科技：</span><span class="logic">全球高性能机器人领跑者深度首次覆盖、给予买入评级：2024年全球四足机器人销量份额32.4%第一，2025年人形机器人销量5215台居全球首位；核心部件控制器、传感器、减速器、电机全自研，毛利率保持50%以上；小脑运动控制全球领先，大脑WMA与VLA双路线并行；预计2026-2028年归母净利润6.48、11.88、16.47亿元。</span></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>西部机械</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>小鹏科技日：IRON已完成首台生产验证，自建机器人工厂与全自动组装线，计划2027年1月硬件量产、Q1在小鹏中国门店实习、Q2正式对外发布；全身触点超1500个、核心区域触觉覆盖度超80%、感知分辨率1毫米；搭载三颗图灵芯片、本地有效算力2250 TOPS，"强端弱云"架构；2026年机器人研发费用接近30亿元。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>华安机械</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>机器人触觉赛道属于爆发前期：GGII预计2030年全球人形机器人柔性触觉传感器需求274亿元；全球前5家市占率57%（TE、Honeywell、Tekscan等），国内以华威科、他山科技、帕西尼、墨现科技、福莱新材、汉威科技等为主。6标的调研：日盈电子（电子皮肤多线路并行+数采手套，北美基地验证中）、达瑞电子（舞肌灵巧手织物手套独供，27年需求1万双/月，78亿市值对应27年15-17x）、慈星股份（一体成型三维编织，对接国内外头部本体）、鹿山新材（离电型/薄膜基电子皮肤已批量交付、与北美大客户签NDA，500万套扩产项目获环评）、福莱新材（柔性触觉传感器向灵心巧手批量供货、与北美大客户签NDA）、泛亚微透（ePTFE膜压阻式数采手套，2026年向北美交付100套）。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>国金机械</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>海工景气度上行：布油94.61美元/桶较25年显著抬升，海上油气开发成本线降至30-50美元/桶；全球4000DWT以上PSV运力10岁以上占比71%，2026年起加速淘汰；10月全球自升式钻井平台利用率89%、半潜式86.67%；FPSO 1-10月新接订单9艘（+13%），2026-2030乐观情境下年均新签13.2艘。推荐中集集团（1-3Q26海工新签57亿美元、在手超100亿美元创历史最高）、振华重工（1H26海工新签4.53亿美元+26%），建议关注润邦股份（PSV/AHTS交付排至2029年）、海油工程（中标卡塔尔8亿美元订单、中东累计突破500亿元）、博迈科（与SBM签两笔FPSO模块合同合计40-51亿元）。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>开源机械</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>太空光伏：FCC有条件批准SpaceX部署最多100万颗Starmind算力卫星（2035年11月须10万颗在轨）；SpaceX已为卫星太阳翼采购HJT电池生产线、首线订单超6000万欧元（德国SINGULUS，2027H1交付）；按单星210kW太阳翼测算，10万颗对应约21GW在轨光伏装机。海外关注已获首条整线订单的SINGULUS；A股材料端关注钧达股份、福斯特（CPI薄膜及柔性封装），HJT低温金属化浆料关注帝科股份、聚和材料，电池组件端关注东方日升。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>太平洋机械</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>宝马展观察：外国参展人员明显变多、各公司电动化大型化产品密集，国产品牌出海成果优秀；电动装载机海外快速起量、挖机电动化逐渐起量；海外矿山需求仍在高位，非洲、东南亚基建需求属中长周期，欧美处更新需求中，头部厂家对明年海外销售增长预期仍在两位数以上。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>天风通信</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">国机精工：</span><span class="logic">国机金刚石（三磨所）：半导体耗材国产替代（百亿以上市场，对标Disco；前三季超硬材料收入6.4亿、Q3同比+61%，半导体相关4.2亿+40%，毛利率60-70%）+金刚石散热0-1新技术（全球展望500-1000亿市场；国内头部算力芯片公司已招标几十万片、27年规模交付；H公司预计2027年底小批量导入；2027年下半年散热片产能达20万片/月）；未来可展望20亿利润（半导体10亿+散热10亿）。</span></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>中信建投机械</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>半导体测试设备价值重估：HBM与高端SoC放量推动测试次数、测试时间及单机价值量同步提升，测试前移、后延及系统化打开成长空间，测试设备景气度有望持续高于半导体设备整体；国产AI芯片进入规模化交付，国内测试设备厂商由成熟品类向高端SoC、存储测试及综合测试平台拓展，高端产品突破与下游扩产共振。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>招商机械</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>苹果提出AMP（智能体式操作策略）：具身智能区别于VLA和WAM的第三条路线——让通用大模型直接控制机器人，无需机器人任务示范数据，跨本体泛化能力强；实验中通用大模型操作成功率显著超过领先的VLA和WAM模型，并涌现出主动感知、工具使用、长程规划等物理操作能力；局限性在于推理成本过高、速度过慢、实时控制不足。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>进门纪要组（高工锂电反馈）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>固态电池技术路线未收敛、设备先行：仍以硫化物为主，干法/湿法路线未收敛；十五五政策催化下设备订单更落地、验收增多；固态在电摩今年出货是去年10倍、人形机器人2026年同增7-8倍；维持先设备、后材料、再电芯判断——年底前广汽等小批量装车试验、全固态整线验收，27年固态设备进入确认期，27-29年半固态在储能/低空/机器人放量，2030+全固态车端。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>进门纪要组（爱仕达×智元）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>爱仕达与智元机器人签署灵犀系列千台生产合作协议，从门店试点、四足代工升级到千台整机规模化制造，具身智能量产预期进一步强化；重点关注整机代工、零部件配套：爱仕达（千台代工订单落地、转型机器人代工厂）、上纬新材（智元核心资本平台）；核心零部件绿的谐波、双环传动、中大力德、汇川技术；整机配套富临精工、蓝思科技。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>进门纪要组（T链点评）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>坚定看好T链核心标的：峰岹科技、新泉股份、凯迪股份、科达利、恒立液压，等12月特斯拉机器人大脑催化；科达利基本面无利空，客户结构已调整为1/3宁德、1/3二线电池厂、1/3海外，宁德影响可控，机器人业务持续强势看好。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>进门纪要组（拓普调研更新）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">拓普集团：</span><span class="logic">下跌速评：短期随机器人板块波动，长期机器人Tier1逻辑不变。北美大客户旋转执行器、直线执行器、灵巧手电机均已批量供货，周产1250-2500套；现阶段单机器人配套价值7-8万元；宁波基地小批量爬坡、泰国产线储备，明年产能至少翻倍；与海外N客户对接灵巧手模组；2027年盈利预测30-32亿、主业支撑600-650亿，当前机器人市值仅200亿左右。</span></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>进门纪要组（HF大制造）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>机器人逢调整可以买入组合：福莱新材、宇树科技、模塑科技、宁波东力、上纬新材、安培龙、凡拓数创；搏弹性关注艾芬达（1.5亿利润、30多亿市值、新叙事）。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>进门纪要组（个股快评）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">中国中车：</span><span class="logic">业绩高确定性、估值有安全边际，重点推荐：动车新增（2027年通车里程小高峰）+高级修（2014-2016年投放动车组27-30年转化五级修）+更新替换（和谐号20年寿命27年首轮替换）多重景气叠加，有望超3年景气度；26年PE约13X、处近10年10%分位，若修复到20X对应约50%弹性；分红率50%，26年A股股息率4%、港股5%。</span></div>
+      <div class="stock"><span class="sname">恒工精密：</span><span class="logic">机器人赛道边际增量最大标的，横跨T链+国产链：T链谐波钢轮份额最大核心供应商、单机价值量约1200元、三季度已放量；具身机器人二次开发和场景部署在手订单6.3亿元、在谈近十亿元；前三季度人形机器人业务收入1.73亿元、增长11倍。</span></div>
+      <div class="stock"><span class="sname">福事特：</span><span class="logic">液压管路龙头，矿山维保服务切入紫金、江铜等大客户，抢占卡特彼勒等竞对份额，打开成长空间。</span></div>
+      <div class="stock"><span class="sname">正帆科技：</span><span class="logic">Q3业绩拐点、Q4继续爆发：汉京热石英26H2订单加速放量，鸿舸gasbox爆单、计划扩产至60亿；27E扣非近10亿、零部件贡献约7成，当前仅14x，一阶段看600亿+。</span></div>
+      <div class="stock"><span class="sname">亚威股份：</span><span class="logic">华为HBM量产在即，或成为华为国产HBM设备供应商：持有苏州芯测25%股权（已收购韩国GSI 100%股权，拥有存储芯片测试机业务），供货全球存储龙头SK海力士。</span></div>
+      <div class="stock"><span class="sname">征和工业：</span><span class="logic">三条曲线：农机刀具（碳化钨合金刀具面向约翰迪尔/克拉斯/久保田，26年预计1.2-1.5亿、27年计划5亿、净利率25%）；液冷（收购酷尔芯51%股权，绑定双鸿、拓展台达/AVC，终端英伟达/AMD/谷歌，27年计划收入15亿+）；机器人灵巧手（微型链+电机混合驱动，已落地机床看护与吉利场景，27年预计出货2500套以上）。</span></div>
+      <div class="stock"><span class="sname">联得装备：</span><span class="logic">华为HBM突破、设备先突围：华为供应商中为数不多能提供混合键合设备的厂商，高精度芯片键合设备已实现国产化交付，并向2.5D/3D、晶圆级封装HBM行业延伸。</span></div>
+      <div class="stock"><span class="sname">逸飞激光：</span><span class="logic">子公司兴启航光耦合设备再定价：耦合重复定位精度50纳米、算法设备全自研，Q3末在手超4亿、全年有望超8亿、27年预计翻倍；1.6T硅光新品已出货1500台；主业圆柱全极耳市占50-70%、新签25亿；董事长提议回购1-2亿。</span></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>进门纪要组（业绩说明会）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">德龙激光：</span><span class="logic">Q3营收2.94亿元（+77.2%）、归母净利7401万元扭亏；合同负债较上年末+72.56%、在手订单充足；自研12英寸硅晶圆激光隐切设备（SDBG）获国内头部存储厂首个国产量产订单并持续收获重复批量订单；重点发展半导体及AI服务器产业链电子制造领域。</span></div>
+      <div class="stock"><span class="sname">瑞松科技：</span><span class="logic">前三季度归母净利增长近9倍；高精高速六轴机器人正式投产下线、拟新增年产3000台产能；光通信MPO光纤跳线设备通过全球连接器龙头验证，首台套进入两家半导体显示龙头并获小批量复购；动态市盈率超120倍、市值近84亿，市场认知从"汽车装备"向"机器人+AI算力"切换。</span></div>
+      <div class="stock"><span class="sname">四方光电：</span><span class="logic">汽车电子收入占比超20%、2026年较好增长；红外气体传感器批量供应国内半导体设备厂商；电池热失控监测传感器批量供货，储能热失控报警器切入头部客户并获定点。</span></div>
+      <div class="stock"><span class="sname">爱科科技：</span><span class="logic">Q3归母净利1560万元（+40.2%）；AI天轨调度系统上半年发布并实现销售；2025年境外收入占比52.34%，以德国、东南亚为战略支点构建"线上数字化平台+线下本地化服务"。</span></div>
+      <div class="stock"><span class="sname">优利德：</span><span class="logic">四大产品线协同、四大生产基地（东莞/河源/常州/越南），产品销往全球80多个国家、近400家经销商；2026年收购浙江信测通信51%股权完善测试测量布局；依托性价比与本地化服务推进中高端国产替代。</span></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>进门纪要组（其他）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>3D打印落地人形灵巧手：铂力特、华曙高科披露3D打印落地人形灵巧手、央视新闻同步推介；3D打印可一体化成型仿生指节、消除装配误差，实现轻量化与复杂镂空，设备端优先受益；关注金属3D打印设备龙头华曙高科、铂力特。</li>
+        <li>克来机电：上交所就股价波动向克来机电下发监管工作函（公司此前5连板）。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>汇丰（HSBC）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>AI电力燃机：共识已计入2027年多数燃气发动机、燃机厂商订单同比下滑，但燃气动力需求来源广泛，现在判定周期见顶为时过早，假设需求维持结构性高位至2031年；短期能否在合适区域快速完成产能爬坡、承接客户已锁定的2028-2030年订单，将是各OEM拉开差距的关键；预计2030年燃气动力设备合计年供给产能达150GW，长期产能过剩或成风险。覆盖潍柴、Bloom Energy、卡特彼勒、GEV、西门子能源、INNIO、东方电气、哈尔滨电气、斗山能源、Baker Hughes等。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>摩根士丹利</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>美国AIDC电力专家会：中期选举潜在监管变动不会削弱底层需求，但会加大项目落地执行难度；即便软银相关燃机订单取消，庞大待释放需求可快速承接（该部分尚未体现在OEM在手订单中）；表后场景下往复式燃气发动机（>1000美元/kW）成本优势已盖过航改燃机（>2000美元/kW）维护频繁的劣势；SOFC约4000美元/kW仍过贵，SMR大规模部署还需7-8年；中国产品核心风险不在质量，而在关税与本地化服务能力。</li>
+        <li>MATCH法案影响：美国半导体设备商不存在"赢"的情景，非中国设备供应链亦无受益环节；欧日OEM尚未收到中国客户提前拉货请求、2027年上半年也不太可能接受；MATCH是近期执行风险，但为中期本土化催化剂。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>东财能源开采</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>焦煤供给受限驱动煤炭股反弹：523座炼焦煤矿产能利用率70.0%、国产焦煤年底增量有限，蒙煤通关未持续放量；若12月中下旬冬储采购启动，低库存有望放大煤焦现货弹性。煤机环节：订单、业绩和股价均已进入底部区间，兼具高分红，关注中创智领、天地科技。</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <h2 class="industry-bar">军工</h2>
+
+  <h2 class="sec">一、高频共识个股<small>被 ≥3 家券商集中推荐的标的</small></h2>
+  <table>
+    <thead>
+      <tr><th style="width:110px;">个股</th><th style="width:64px;">热度</th><th>推荐券商</th><th style="width:46%;">核心逻辑一句话</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><span class="sname">中国卫星</span></td><td><span class="hot">4</span></td><td class="brokers">银河军工 / 国海军工 / zx航空航天 / 进门纪要组（商业航天）</td><td>卫星制造核心标的，受益太空算力星座组网提速与宇航电源需求放量。</td></tr>
+      <tr><td><span class="sname">航天电子</span></td><td><span class="hot">3</span></td><td class="brokers">银河军工 / 国海军工 / 进门纪要组（商业航天）</td><td>火箭控制系统与激光通信核心配套，受益可复用火箭与太空算力双催化。</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="sec">二、分券商观点详录</h2>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>银河军工</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>商业航天深度《"箭"指星河，万星入轨》：火箭是当前商业航天产业链最卡脖子环节；国网+千帆规划近3万颗（星网已组网249颗、垣信278颗），频轨规则时间压力大；国内算力星座规划合计超7000颗、对应组网发射需求约240-480次，为2025年全国93次发射的数倍。</li>
+        <li>可复用是降本底层逻辑：猎鹰9号复用后边际成本降约70%，国内5次以内实现成本优势、10次以上单次成本有望降80%；2026年为密集验证年（长十乙全球首次一子级海上网系回收、朱雀三号陆上着陆腿回收）；2027年为技术与资本化双转折点，2028年为批量上天与商业化初始年份；当前建议逢低布局、不追高。</li>
+        <li>推荐标的：卫星制造关注中国卫星、航天电子、上海瀚讯、航天智装、复旦微电、铖昌科技；商业火箭配套关注斯瑞新材、铂力特、超捷股份、广联航空。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>国海军工</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>SpaceX 100万颗巨型星座获批：FCC附条件放行Starmind为全球首个轨道数据中心许可，标志太空算力从概念走向工程落地；太空算力或成为AI算力重要延伸赛道，带动星间激光、空间电源、抗辐照芯片等核心配套加速落地。建议关注：宇航电源（电科蓝天、乾照光电、中国卫星）、激光通信（烽火通信、信科移动、航天电子）、太阳翼（航天环宇）、空间测控（中科星图、星图测控）、测试（苏试试验、思科瑞、西测测试、佳驰科技）。</li>
+        <li>大飞机系列：全球飞机累计订单约1.7万架、按当前产能消纳约需12年；发动机供应不足为交付瓶颈，航材呈量价齐升态势（2025年全球二手航材市场约70多亿美金、发动机耗材占40%，航材保障链价格年增速3%以上）；919在手订单约1500架，未来十年国内民机年化至少3000亿元市场。推荐梯队：商发产业链（航发科技、航发动力、航发控制、航材股份）、机载系统（中航机载、江航装备）、机体结构（中航西飞、洪都航空），航材后市场关注润贝航科、北摩高科、江航装备。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>zx航空航天</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>SpaceX太空数据中心获批简评：Starmind为全球首个拿到国家级通信监管许可的大规模在轨AI算力星座，拉开全球太空AI基础设施竞争；空间数据中心PUE接近1（地面一般1.4），空间太阳能全年发电、单位电力成本低廉；晨昏太阳同步轨道资源稀缺，中美均加速空间算力布局；天数天算带动遥感卫星整星及可见光/SAR/红外载荷市场扩容。产业链标的：海外S链（西部材料、迈为股份、钧达股份、宇晶股份）、国产链（国星宇航、佳都科技、顺灏股份、中科星图）、星算配套（电科蓝天、上海港湾、烽火通信、乾照光电）、卫星遥感（中国卫星、国博电子、铖昌科技、臻镭科技）。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>进门纪要组（军工动态）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>珠海航展预热：第十六届中国航展12月7-13日在珠海举办，歼-35A、歼-20A、歼-16、运-20B、运油-20A等多型国产主战装备将飞行展示，运-20B、新一代预警雷达等首次静态展出；机构展望2027年军工迈入3.0时代（"十五五"规模化订单落地+军贸体系化出口+AI算力/大飞机民用需求放量），板块估值、机构持仓双低位，三季报后迎5个月业绩真空期、博弈窗口友好。</li>
+        <li>神舟二十四号发射成功、两乘组会师太空；产业端同步提速：朱雀三号回收一子级9台液氧甲烷发动机完成点火验收试车、具备再次使用条件，快舟未来三年计划50次以上发射，千帆在轨规模增至274颗，2026年前10个月我国累计入轨航天器408颗、已超2025年全年；商业航天重心从硬件建设转向商业变现（全球商业卫星服务约1300亿美元、为发射服务7倍以上），关注中国卫通、航天电子、国博电子、康希通信、震裕科技、景旺电子、崇达技术、中材科技、移远通信、中国卫星。</li>
+        <li>海外：俄罗斯杜马通过2027年预算草案，国防预算约17.15万亿卢布（2089亿美元）、较2026年增长约32.6%；日本防卫省最快12月上旬在北海道上富良野启动远程导弹部署。</li>
+      </ul>
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">震裕科技：</span><span class="logic">持股70%与国星宇航设立震裕星算布局太空算力卫星制造，预计2027Q1投产、潜在订单千颗量级，另与航天八院合作明年承接至少50颗低轨卫星代工；单星ASP约1500万元、净利率15%，预计2027/2028年交付200/1000颗、对应利润6.8/22.5亿元，远期利润有望超过现有主业。</span></div>
+      <div class="stock"><span class="sname">睿创微纳：</span><span class="logic">卫星激光通信核心供应商，激光通信"红外对准"APT系统配套的探测器及捕跟模组已随卫星成功入轨；27年11X，继续重点推荐。</span></div>
+      <div class="stock"><span class="sname">六九一二：</span><span class="logic">高能微波反无产品为核心成长方向：车载式完成三代研发、2027上半年开始销售，国内已有项目竞标；海外需求强烈、通过军贸公司对接客户、售价远高于国内；珠海航展将参与亮相。</span></div>
+      <div class="stock"><span class="sname">中无人机：</span><span class="logic">业绩说明会：军贸业务有序开展、海外客户集中在一带一路沿线，国内订单利润低于军贸订单；民用无人机已在气象探测、应急救援应用，已通过参股省级低空运营平台迈出实质性一步。</span></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>进门纪要组（欧洲军工）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>Fjord Defence（挪威）Q3财报会：Q3国防板块备考收入2.4亿挪威克朗（同比+20%）、EBITDA利润率19.2%；在手订单17亿挪威克朗，2027年订单覆盖率已达70%；2027年指引收入12-14亿挪威克朗（+30%）、EBITDA 2.3-2.5亿；欧洲国防工业预期增速25-30%，公司借"建设+买入"战略持续补强收购（Micro Position获44台CNC机床）。</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <h2 class="industry-bar">房地产</h2>
+
+  <h2 class="sec">一、高频共识个股<small>被 ≥3 家券商集中推荐的标的</small></h2>
+  <div class="empty-note">当日无被 ≥3 家券商集中推荐的个股。万科被多家机构提及但均为债券展期风险跟踪，非推荐。</div>
+
+  <h2 class="sec">二、分券商观点详录</h2>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>国信地产</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>中国海外发展经营近况：2026年1-10月累计合约销售1988亿元（+5%），10月单月178亿元（-4.6%）；7-10月销售动能偏弱、未见金九银十，客户观望情绪较重；11、12月铺排新增货量约300亿元力争年底冲刺；全年计划去化期初库存约500亿元（上半年已去化200多亿）。</li>
+        <li>828新政影响：项目资金回笼时间拉长，同等资本金可投项目数量减少，短期投资更趋谨慎；7、8月土地市场已降温、新政后更明显，若销售价格平稳，项目利润率改善可部分对冲周转放慢对IRR的影响；全年投资预算800-1000亿元的前提是市场与政策稳定。</li>
+        <li>利润率与分红：全年开发物业结算毛利率指引13%-15%（2025年13.9%）、在底部小幅波动；2024、2025年分红率38%、高于不低于30%的指引，2026年分红比例暂无更新；商业板块"十五五"持续推进，希望商业收入尽快跨过100亿门槛，2026年全年商业收入预计无明显增长。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>浙商证券</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">贝壳-W：</span><span class="logic">三季度GTV 7697亿元（+4.5%）、净收入210亿元（-8.9%），经调整净利润26.05亿元（+102.6%）、经调整净利率12.4%（+6.8pct）；存量房与新房GTV连续两个季度正增长，效率驱动的盈利模型持续验证；家装租赁主动收缩低质收入后盈利质量不降反升；三季度回购约1.62亿美元、年初至今累计约6.09亿美元；上调2026-2028年盈利预测，维持买入评级、目标价60港元。</span></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>中信建投地产</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>地产日报：青岛出台商品住房销售制度改革意见，新项目预售须主体结构封顶、优先现房销售，现房定金不超总价款5%；郑州以2026年8月28日为节点划分四类项目、明确不同预售门槛；上海公示第十三批拟出让宅地（浦东北蔡、闵行合计约6.84公顷）；武汉推出36宗地块、起始总价约78亿元。公司层面：保利发展拟发行不超200亿元公司债；华夏幸福被法院裁定受理重整申请、叠加实施退市风险警示；旭辉旗下永升服务拟2.99亿元收购沈阳卓裕（与旭辉欠款等额抵销）。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>中泰地产</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>地产日报：11月26日申万房地产指数-0.14%、跑输沪深300约0.2pct；深圳现房销售细则落地后首宗宅地成交——中国金茂19.47亿元竞得光明地块，经123轮竞价、溢价率48.97%、楼面价2.82万元/㎡（光明涉宅用地楼面价第二位）；保利发展拟发200亿元公司债用于偿债、补流、项目建设及地产项目并购；华夏幸福正式进入司法重整程序。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>中金不动产</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>香港地产10月报：10月全港私宅成交量同比-22%（一手环比-6%、二手环比+3%）；中原领先私宅价格指数环比-0.8%，年初至今累计+10.5%；私宅租金环比+0.3%、同比+6.4%；9月私人写字楼租金指数同环比均+0.1%，同比自2022年4月以来首次转正。判断短期房价或处整固阶段、不排除小幅震荡回调，但供需关系较年初未发生实质变化，看好中长期楼市景气度上行趋势。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>摩根大通</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>香港地产与银行：发布商业地产风险和加息敏感性分析，偏好领展、太古地产、香港置地、汇丰、渣打。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>国泰海通</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>"向回看"系列研究：破冰之旅，美日地产复苏经验及中国对策——促进美国房价复苏的主要因素是产业升级带来的收入提升、及时出清不良贷款、较高的国际移民比重和出生率；拖累日本房价复苏的主要因素是不良贷款出清慢和老龄化严重；参照美日经验，中国应加快产业结构优化升级以提高居民可支配收入，同时加大房地产不良贷款出清，并进一步鼓励生育以改善人口结构。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>申万固收</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>2027年信用债展望：华发事件启示下，国企、经济强省、主体重要性等传统信仰可能松动，深水区可能仍主要在地产、建工等行业，关注被地产拖累较多企业的潜在风险；地产行业仍在寻底，华发事件后抛压明显，策略上偏谨慎。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>华泰固收</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>境外债月报：华发事件推动弱资质主体信用重定价——华发集团点心债较事件前下跌35%-55%，点心债指数OAS利差走阔16.7BP；中资美元债11月再度走负，其中地产债大幅下跌9.22%、城投债-0.46%；建议点心债短期防御为主（优先投资级金融债和龙头产业债），中资美元债以中短久期投资级为主、规避弱城投和地产债；后续关注华发债券偿付与资产处置、万科债券展期进展。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>进门纪要组（风险跟踪）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>万科：寻求将12月15日到期的12亿元境内债再度展期三年兑付、仍按时支付3%票息；与债权人讨论了现金先付部分本金的可能，但各方案比例均不到以往展期方案40%支付比例的一半。</li>
+        <li>华发：联合资信下调珠海华发长期信用等级至AA+、展望负面，称存续债券二级市场价格波动较大、再融资压力加大；华发股份拟将110亿元股东借款转换为永续债权。</li>
+        <li>海外：伦敦两大高端住宅区（威斯敏斯特、肯辛顿-切尔西）9月房价分别同比-18.5%、-15.6%，创逾30年最大跌幅（华福政策与国际关系）；美国10月新屋销售70.1万户意外升至年内最高，建商大力提供购房优惠抵消抵押贷款利率飙升影响。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>进门纪要组（业绩说明会）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">推荐个股</div>
+      <div class="stock"><span class="sname">中华企业：</span><span class="logic">上海地产集团旗下：徐汇东安（沈家里）项目桩基全面开工、计划四季度入市；中企云启春申集中交付一次性到访交付率100%；商办板块"腾笼换鸟"，古北国际财富中心落地东陶、阿达尼等标杆客户，中企未来世纪大厦完成"商办+酒店"复合业态转型。</span></div>
+    </div>
+  </div>
+
+  <div class="broker-card">
+    <div class="broker-head"><h3>进门纪要组（海外市场）</h3></div>
+    <div class="broker-body">
+      <div class="part-cap">行业观点</div>
+      <ul class="views">
+        <li>Walker &amp; Dunlop（美国多户住宅）：本轮是供给驱动型股权危机而非GFC式债务危机——困境出售占比仅约5%（2010年为25%），CMBS多户违约率8%但仅占全部未偿债务3%、GSE拖欠率仅60-70bp；2027年开工预计低于25万套，市场底部出现在2025年冬季；当前可低于重置成本20%买入，长期持有+低杠杆+优质地段仍是可接受的押注。</li>
+        <li>UBM Development（奥地利/德国）：前9个月税前利润820万欧元转正（去年-390万）；维也纳Q3公寓销售下滑超20%、德国A级市场需求-9%，9月起所有贷款期限利率均超4%；新建公寓供给较需求在维也纳低31%、德国平均低35%、布拉格低47%；2027年维也纳非补贴租赁完工不足1000套。</li>
+        <li>Grainger（英国建房出租龙头）：全年盈利增长12.1%达6000万英镑，入住率97%（行业93-96%）、同店租金增长3.2%；8.25亿英镑非核心资产处置降杠杆（净债务目标降至11亿英镑）；英国2025年仅交付14.4万套新建住房、20万套租赁住房退出市场，全国住房缺口预计690万套；租金管制已被政府排除，机构资本加速流入。</li>
+        <li>Adler Group（德国）：柏林组合17,500套，同比租金增长3.5%、空置率仅1.1%；柏林潜在联盟目标2028年对持有超1万套住宅的私人业主实施征收法（适用Adler），联邦政府正制定投资保护法、预计2027年上半年完成立法。</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <footer>
+    <p><b>数据来源：</b>进门财经（路演纪要 / 券商点评 / 内资研报），检索区间：2026年11月26日。机械设备：路演/电话会纪要7篇、券商点评91条、内资研报3篇；国防军工：路演/电话会纪要5篇、券商点评40条、内资研报0篇；房地产：路演/电话会纪要9篇、券商点评25条、内资研报0篇。整理口径：行业性观点与个股名单均按原始数据顺序列出；仅主线围绕单一个股的专题内容列入"推荐个股"。</p>
+    <p style="margin-top:6px;"><b>免责声明：</b>本简报仅为信息整理与学习交流之用，不构成任何投资建议。所载券商观点不代表本平台立场，预测数据存在不确定性，据此操作风险自担。股市有风险，投资需谨慎。</p>
+  </footer>
+
+</div>
+</body>
+</html>
